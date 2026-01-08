@@ -14,14 +14,14 @@ draw = function(){
   noStroke()
 
   //Shapes and Color Go Here
-  background(184, 236, 255);
+  background(0, 0, 0);
 
   // sun
-  fill(255, 170, 0);
+  fill(255, 255, 255);
   ellipse(200, 100, sunRadius, sunRadius);
 
   // clouds 
-  fill(255, 255, 255);
+  fill(54, 69, 79);
 
   // left cloud
   ellipse(leftX, 150, 126, 97);
@@ -32,6 +32,18 @@ draw = function(){
   ellipse(rightX, 100, 126, 97);
   ellipse(rightX+62, 100, 70, 60);
   ellipse(rightX-62, 100, 70, 60);
+
+  // stars
+  fill(255,240,31)
+  ellipse(20,200,4,4)
+  ellipse(250,140,4,4)
+  ellipse(220,35,4,4)
+  ellipse(90,150,4,4)
+  ellipse(20,200,4,4)
+
+  leftX = leftX+1
+  rightX = rightX-1
+  sunRadius = sunRadius+0
   
 }
 
